@@ -1,0 +1,51 @@
+
+body{
+    background-image: url("src/balloon-1046658_1920.jpg");
+}
+
+
+table{
+    width: 95%;
+    text-align: center;
+    color:white;
+}
+#title, #date{
+    font-family: "Bradley Hand ITC",sans-serif;
+    text-align: center;
+    color: orange;
+
+}
+#BillsPic{
+    width:40%;
+    height:40%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    opacity: 100;
+
+}
+a,th{
+    color:white;
+}
+a:link{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:orange;
+}
+a:active{
+    color:orangered;
+}
+#ourStory,h2{
+    text-align: center;
+}
+#BillsPic{
+    opacity: .8;
+    border-radius: 25px;
+}
+#ourStory{
+    color:orange;
+    margin-top:20%;
+
+}
