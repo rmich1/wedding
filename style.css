@@ -1,35 +1,60 @@
 
-body{
-    background-image: url("src/balloon-1046658_1920.jpg");
+
+
+#background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    bottom: 0;
+    z-index:-1;
+    opacity:0.25;
+    background-image: url("src/rosebackground.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-color:peachpuff;
+
+
 }
+
 
 
 table{
-    width: 95%;
+    width:90%;
     text-align: center;
-    color:white;
+    color:red;
+
 }
-#title, #date{
-    font-family: "Bradley Hand ITC",sans-serif;
+tr{
+
+    padding-right:2%;
+    padding-left:2%;
+}
+.title, .date, #welcome{
+    font-family: "Bradley Hand ITC",Serif;
     text-align: center;
-    color: orange;
+    color: navy;
 
 }
 #BillsPic{
-    width:40%;
-    height:40%;
+    border-radius: 25px;
+    width:35%;
+    height:35%;
     display:block;
     margin-left:auto;
     margin-right:auto;
-    opacity: 100;
+
+
 
 }
 a,th{
-    color:white;
+    color:red;
 }
 a:link{
     text-decoration: none;
-    color:white;
+    color:red;
 }
 a:hover{
     color:orange;
@@ -37,15 +62,12 @@ a:hover{
 a:active{
     color:orangered;
 }
-#ourStory,h2{
-    text-align: center;
-}
-#BillsPic{
-    opacity: .8;
-    border-radius: 25px;
-}
-#ourStory{
-    color:orange;
-    margin-top:20%;
 
+
+body{
+    font-family: "Bradley Hand ITC",Serif;
+    text-align: center;
+    color: navy;
+    background-color:peachpuff;
 }
+

@@ -1,0 +1,47 @@
+#background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    bottom: 0;
+    z-index:-1;
+    opacity:0.25;
+    background-image: url("src/literature-3060241_1920.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.RSVPHead{
+    text-align: center;
+    color:navy;
+    font-family:"Bradley Hand ITC",Serif;
+
+}
+
+table{
+    width: 95%;
+    text-align: center;
+    color:red;
+
+}
+form{
+    text-align: center;
+
+}
+.email{
+    padding-right:2.5%;
+}
+a,th{
+    color:red;
+}
+a:link{
+    text-decoration: none;
+    color:red;
+}
+a:hover{
+    color:orange;
+}
+a:active{
+    color:orangered;
+}

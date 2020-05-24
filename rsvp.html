@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <link rel="stylesheet" type="text/css" href="rsvp.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
 </head>
-<body>
+<header class="RSVPHead">
+    <nav>
+        <table id="navigation">
+            <tr>
+                <th><a href="./home.html">Welcome</a></th>
+                <th><a href="#ourStory">Our Story</a></th>
+                <th><a href="#schedule">Schedule</a></th>
+                <th><a href="#weddingParty">Wedding Party</a></th>
+                <th><a href="https://www.amazon.com/wedding/andrew-webster-rebecca-michael--august-2021/registry/2G6VOI9ZS8H0V" target="_blank">Registry</a></th>
+                <th><a href="./rsvp.html">RSVP</a></th>
+            </tr>
+        </table>
+    </nav>
+    <h1>Andrew & Rebecca</h1>
+    <h2> RSVP</h2>
+</header>
+<main>
+    <div id="background">
 
-</body>
+    </div>
+    <form>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+        <br>
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+        <br>
+        <label for="email" class="email">Email *</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <br>
+        <label for="attending">Are You Attending? *</label>
+        <select name="attending" id="attending" required>
+            <option value="yes">Yes!</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="numberGuests">Number Attending *</label>
+        <select name="numberGuests" id="numberGuests" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <label for="song">What song will you dance to?</label>
+        <br>
+        <br>
+        <textarea row="300" cols="50" name="song" id="song">
+    </textarea>
+        <br>
+        <br>
+        <input type="submit">
+
+
+    </form>
+
+</main>
 </html>
