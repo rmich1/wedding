@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webster2121</title>
+
+    <title>Andrew & Rebecca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type = "text/javascript" src="./slideshow.js" defer></script>
 </head>
 <main>
-    <div id="background">
+    <div class="backgroundImg">
+        <header>
+            <div class="banner">
+                <div class="menu">
+                    <button class="menubtn"><i class="fa fa-bars"></i> MENU</button>
+                    <div class="menu-content">
+                        <a href="./home.html">Home</a>
+                        <a href="./countdown.html">Count Down</a>
+                        <a href="./songrequest.html">Song Request</a>
+                        <a href="https://www.amazon.com/wedding/andrew-webster-rebecca-michael--august-2021/registry/2G6VOI9ZS8H0V" target="_blank">Registry</a>
+                        <a href="./drinkSurvey.html">Drink Survey</a>
+                    </div>
+                    <p class="webster">Andrew & Rebecca Webster</p>
+
+                </div>
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+            </script>
+
+
+
+
+
+
+        </header>
+
+
+        <div class="weddingInfo">
+            <div class="weddingPhoto">
+                <img src="./src/alyssaWedding (2).jpg">
+            </div>
+            <h2><span class="strikethrough">We're Getting Married - 08.21.2021</span></h2>
+
+            <h2>We're Expecting!</h2>
+            <h3>Baby Webster Coming Soon!</h3>
+
+        </div>
+        <img class="baby" src="./src/baby.jpg"/>
     </div>
 
 
-    <header>
-        <nav>
-            <table id="navigation">
-                <tr>
-                    <th><a href="./home.html">Welcome</a></th>
-                    <th><a href="">Our Story</a></th>
-                    <th><a href="">Schedule</a></th>
-                    <th><a href="">Wedding Party</a></th>
-                    <th><a href="https://www.amazon.com/wedding/andrew-webster-rebecca-michael--august-2021/registry/2G6VOI9ZS8H0V" target="_blank">Registry</a></th>
-                    <th><a href="./rsvp.html">RSVP</a></th>
-                </tr>
-            </table>
-        </nav>
-        <section id="welcome">
-            <h1>We're Getting Married!</h1>
-            <h1 class="title"><strong>Andrew & Rebecca</strong></h1>
-            <h2 class="date"><strong>August 21, 2021</strong></h2>
-            <img id="BillsPic" src="src/billsFam.jpg"/>
-            <h2>Join us to celebrate in Sodus!</h2>
-        </section>
-    </header>
 </main>
 </html>

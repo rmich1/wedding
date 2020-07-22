@@ -1,73 +1,132 @@
-
-
-
-#background{
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    bottom: 0;
-    z-index:-1;
-    opacity:0.25;
-    background-image: url("src/rosebackground.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    background-color:peachpuff;
-
+.menubtn {
+    background-color: #FFD1DC;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.backgroundImg{
+    background-image: url("src/secondTry.jpg");
+    background: cover;
 
 }
-
-
-
-table{
-    width:90%;
-    text-align: center;
-    color:red;
-
+html{
+    background-color: #FFD1DC;
 }
-tr{
 
-    padding-right:2%;
-    padding-left:2%;
+/* The container <div> - needed to position the menu content */
+.menu {
+    position: relative;
+    display: inline-block;
 }
-.title, .date, #welcome{
-    font-family: "Bradley Hand ITC",Serif;
-    text-align: center;
-    color: navy;
 
+/* menu Content (Hidden by Default) */
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-#BillsPic{
-    border-radius: 25px;
-    width:35%;
-    height:35%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
 
-
-
-}
-a,th{
-    color:red;
-}
-a:link{
+/* Links inside the menu */
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    color:red;
-}
-a:hover{
-    color:orange;
-}
-a:active{
-    color:orangered;
+    display: block;
 }
 
+/* Change color of menu links on hover */
+.menu-content a:hover {background-color: #ddd;}
 
-body{
-    font-family: "Bradley Hand ITC",Serif;
+/* Show the dropdown menu on hover */
+.menu:hover .menu-content {display: block;}
+
+/* Change the background color of the menu button when the menu content is shown */
+.menu:hover .menubtn {background-color: #0000;}
+
+.weddingInfo{
+
+    font-style: italic;
+
+}
+
+.banner{
+    height:12%;
+    width:100%;
+
+    margin-top:0px;
+    background-color: #FFD1DC;
+
+
+}
+.weddingInfo{
+    display:block;
     text-align: center;
-    color: navy;
-    background-color:peachpuff;
+    margin-top:20px;
+
+    padding: 2%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.webster{
+    padding-left: 230px;
+    font-size:50px;
+    display:inline-block;
+    font-family: Times;
+    font-style: italic;
+
+
+}
+.baby{
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+    border: solid;
+    border-radius: 5px;
+    height: 10%;
+    width: 20%;
+
+}
+.weddingPhoto img{
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid;
+    border-color: black;
+    height: 40%;
+    width: 40%;
+    border-radius: 10%;
+
+}
+.strikethrough {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
 }
 
+.strikethrough:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    box-shadow: 0 1px rgba(255,255,255,0.6);
+    margin-top: -0.7em;
+    background: black;
+    transform-origin: center left;
+    animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+    transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+@keyframes strikethrough {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
